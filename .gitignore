@@ -15,7 +15,10 @@
 /config/master.key
 
 # Ignore local environment variables
-.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
 # Ignore bundler config
 /.bundle

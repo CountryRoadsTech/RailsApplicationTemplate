@@ -21,6 +21,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Dotenv Rails automatically loads variables from .env files into environment variables accessible from the global variable ENV.
+gem 'dotenv-rails', '~> 2.7'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
