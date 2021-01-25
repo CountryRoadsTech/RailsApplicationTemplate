@@ -11,3 +11,6 @@ Rails.start()
 ActiveStorage.start()
 
 import "controllers"
+
+// Import all application CSS and SCSS.
+import "../stylesheets/application.scss"
