@@ -72,6 +72,9 @@ group :development do
   gem 'better_errors', '~> 2.9'
   # Binding of Caller is used by Better Errors to enable its advanced features.
   gem 'binding_of_caller', '~> 1.0'
+
+  # Annotate is used to automatically commented SQL schema information to the top of relevant Ruby on Rails classes.
+  gem 'annotate', '~> 3.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -72,6 +72,9 @@ GEM
       device_detector
       geocoder (>= 1.4.5)
       safely_block (>= 0.2.1)
+    annotate (3.1.1)
+      activerecord (>= 3.2, < 7.0)
+      rake (>= 10.4, < 14.0)
     authtrail (0.2.2)
       activerecord (>= 5)
       geocoder
@@ -268,6 +271,7 @@ PLATFORMS
 DEPENDENCIES
   ahoy_email (~> 1.1)
   ahoy_matey (~> 3.1)
+  annotate (~> 3.1)
   authtrail (~> 0.2)
   better_errors (~> 2.9)
   binding_of_caller (~> 1.0)
