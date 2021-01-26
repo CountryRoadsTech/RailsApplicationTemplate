@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+  skip_after_action :verify_authorized # User authorization should not be performed during user authorization.
+
   # You should configure your model like this:
   # devise :omniauthable, omniauth_providers: [:twitter]
 
