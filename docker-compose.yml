@@ -1,0 +1,48 @@
+version: "3.8"
+
+services:
+  application:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - database
+      - redis
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/application
+      - gem_cache:/usr/local/bundle/gems
+      - node_modules:/application/node_modules
+    env_file: .env
+
+  database:
+    image: postgres:13.1
+    volumes:
+      - database_data:/var/lib/postgresql/data
+      - ./docker-entrypoint-database.sql:/docker-entrypoint-initdb.d/init.sql
+    env_file: .env
+
+  redis:
+    image: redis:6.0.1
+    env_file: .env
+
+  sidekiq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - application
+      - database
+      - redis
+    volumes:
+      - .:/app
+      - gem_cache:/usr/local/bundle/gems
+      - node_modules:/app/node_modules
+    env_file: .env
+    entrypoint: ./docker-entrypoint-sidekiq.sh
+
+volumes:
+  gem_cache:
+  database_data:
+  node_modules:

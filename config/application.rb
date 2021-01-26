@@ -37,5 +37,9 @@ module ApplicationTemplate
 
     # Use Sidekiq as the Active Job async job queue.
     config.active_job.queue_adapter = :sidekiq
+
+    # Log to STDOUT as that is what is Docker expects.
+    config.log_tags = [:subdomain, :uuid]
+    config.logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
   end
 end
