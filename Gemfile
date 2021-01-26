@@ -35,6 +35,8 @@ gem 'devise', '~> 4.7'
 # Pundit adds user authorization.
 gem 'pundit', '~> 2.1'
 
+# Paper Trail tracks and stores changes to models.
+gem 'paper_trail', '~> 11.1'
 # Authtrail is used to track and store user's login activities.
 gem 'authtrail', '~> 0.2'
 

@@ -7,4 +7,6 @@ class Page < ApplicationRecord
 
   extend FriendlyId
   friendly_id :title, use: :slugged
+
+  has_paper_trail # Track changes to this model's attributes.
 end
