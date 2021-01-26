@@ -34,5 +34,8 @@ module ApplicationTemplate
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Use Sidekiq as the Active Job async job queue.
+    config.active_job.queue_adapter = :sidekiq
   end
 end
