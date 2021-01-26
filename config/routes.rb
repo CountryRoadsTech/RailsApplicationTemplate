@@ -8,4 +8,8 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     unlocks: 'users/unlocks'
   }
+
+  resources :pages # Used to display rich text editor generated pages.
+  root to: 'pages#index' # Sets the homepage of the website (e.g. /) to page's index action.
+  get '/:id' => 'pages#show' # This must be the last line of this method to avoid accidentally overriding other routes.
 end
