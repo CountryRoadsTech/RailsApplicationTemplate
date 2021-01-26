@@ -17,12 +17,11 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Adds the Active Storage variant method to resize uploaded images.
 gem 'image_processing', '~> 1.2'
+# Reduces boot times through caching; required in config/boot.rb
+gem 'bootsnap', '>= 1.4.4', require: false
 
 # Dotenv Rails automatically loads variables from .env files into environment variables accessible from the global variable ENV.
 gem 'dotenv-rails', '~> 2.7'
-
-# Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
