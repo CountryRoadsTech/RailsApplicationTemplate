@@ -39,6 +39,8 @@ gem 'pundit', '~> 2.1'
 gem 'paper_trail', '~> 11.1'
 # Authtrail is used to track and store user's login activities.
 gem 'authtrail', '~> 0.2'
+# Ahoy Matey tracks user analytics and stores them in the application database (not a 3rd party server).
+gem 'ahoy_matey', '~> 3.1'
 
 group :development, :test do
   # RSpec Rails replaces Rail's default testing framework.

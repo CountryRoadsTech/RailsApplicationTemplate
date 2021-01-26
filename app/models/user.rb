@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :pages, inverse_of: :user
   has_many :login_activities, as: :user
+  has_many :visits, class_name: "Visit"
 
   has_paper_trail # Track changes to this model's attributes.
 end
