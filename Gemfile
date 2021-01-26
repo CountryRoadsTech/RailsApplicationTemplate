@@ -12,12 +12,17 @@ gem 'puma', '~> 5.0'
 gem 'webpacker', '~> 5.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
-# Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 4.0'
+# Use Redis adapter to run Action Cable in production and also for caching.
+gem 'redis', '~> 4.2'
 # Adds the Active Storage variant method to resize uploaded images.
 gem 'image_processing', '~> 1.2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+
+# Sidekiq is used as an Active Job adapter to run async jobs in the background.
+gem 'sidekiq', '~> 6.1'
+# Hiredis adds "support for the faster hiredis connection library".
+gem 'hiredis', '~> 0.6'
 
 # Dotenv Rails automatically loads variables from .env files into environment variables accessible from the global variable ENV.
 gem 'dotenv-rails', '~> 2.7'
