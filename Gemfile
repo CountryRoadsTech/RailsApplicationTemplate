@@ -62,6 +62,8 @@ group :development, :test do
 
   # Bullet is used to detect N+1 database queries that should be optimized.
   gem 'bullet', '~> 6.1'
+  # Brakeman is used to detect potential security vulnerabilities via static analysis.
+  gem 'brakeman', '~> 4.10'
 end
 
 group :development do
