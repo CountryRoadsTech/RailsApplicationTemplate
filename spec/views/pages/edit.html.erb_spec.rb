@@ -1,21 +1,22 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe "pages/edit", type: :view do
+RSpec.describe 'pages/edit', type: :view do
   before(:each) do
     @page = assign(:page, Page.create!(
-      user: nil,
-      title: "MyText"
-    ))
+                            user: nil,
+                            title: 'MyText'
+                          ))
   end
 
-  it "renders the edit page form" do
+  it 'renders the edit page form' do
     render
 
-    assert_select "form[action=?][method=?]", page_path(@page), "post" do
+    assert_select 'form[action=?][method=?]', page_path(@page), 'post' do
+      assert_select 'input[name=?]', 'page[user_id]'
 
-      assert_select "input[name=?]", "page[user_id]"
-
-      assert_select "textarea[name=?]", "page[title]"
+      assert_select 'textarea[name=?]', 'page[title]'
     end
   end
 end

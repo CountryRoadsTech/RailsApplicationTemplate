@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PagePolicy < ApplicationPolicy
   # All users can view the index of pages.
   def index?

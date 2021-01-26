@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 if Rails.env.development?
   require 'annotate'
-  task :set_annotation_options do
+  desc 'Automatically adds SQL schema information to the top of relevant Ruby on Rails classes'
+  task set_annotation_options: :environment do
     # You can override any of these by setting an environment variable of the same name.
     Annotate.set_defaults(
       'active_admin' => 'false',

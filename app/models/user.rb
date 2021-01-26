@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: users
@@ -39,7 +41,7 @@ class User < ApplicationRecord
 
   has_many :pages, inverse_of: :user
   has_many :login_activities, as: :user
-  has_many :visits, class_name: "Visit"
-  has_many :email_messages, class_name: "EmailMessage", as: :user
+  has_many :visits, class_name: 'Visit'
+  has_many :email_messages, class_name: 'EmailMessage', as: :user
   has_paper_trail # Track changes to this model's attributes.
 end
