@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :confirmable, :lockable, :timeoutable, :trackable
 
   has_many :pages, inverse_of: :user
+  has_many :login_activities, as: :user
 end
