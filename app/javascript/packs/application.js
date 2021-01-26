@@ -17,3 +17,8 @@ import "../stylesheets/application.scss"
 
 // Adds a preview indication as directly uploaded files are being uploaded.
 import "../source/direct_upload.js"
+
+// Import Rich Text Editor's Javascript.
+require("trix")
+require("@rails/actiontext")
+
