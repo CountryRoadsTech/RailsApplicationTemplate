@@ -60,6 +60,13 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    ahoy_email (1.1.0)
+      actionmailer (>= 5)
+      addressable (>= 2.3.2)
+      nokogiri
+      safely_block (>= 0.1.1)
     ahoy_matey (3.1.0)
       activesupport (>= 5)
       device_detector
@@ -152,6 +159,7 @@ GEM
       pry (~> 0.13.0)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
+    public_suffix (4.0.6)
     puma (5.1.1)
       nio4r (~> 2.0)
     pundit (2.1.0)
@@ -258,6 +266,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  ahoy_email (~> 1.1)
   ahoy_matey (~> 3.1)
   authtrail (~> 0.2)
   better_errors (~> 2.9)

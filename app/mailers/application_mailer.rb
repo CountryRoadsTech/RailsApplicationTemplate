@@ -1,4 +1,6 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  default from: 'users@countryroads.tech'
   layout 'mailer'
+
+  track open: true, click: true # Track when the email is opened, and if/when links are clicked.
 end

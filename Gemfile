@@ -41,6 +41,8 @@ gem 'paper_trail', '~> 11.1'
 gem 'authtrail', '~> 0.2'
 # Ahoy Matey tracks user analytics and stores them in the application database (not a 3rd party server).
 gem 'ahoy_matey', '~> 3.1'
+# Ahoy Email tracks email analytics (emails opened and links in emails clicked) and stores them in the application database (not a 3rd party server).
+gem 'ahoy_email', '~> 1.1'
 
 group :development, :test do
   # RSpec Rails replaces Rail's default testing framework.
