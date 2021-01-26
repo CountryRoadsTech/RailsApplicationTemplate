@@ -8,9 +8,12 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 Rails.start()
-ActiveStorage.start()
+ActiveStorage.start() // Enables direct upload of attachments from the user's browser to the server.
 
 import "controllers"
 
 // Import all application CSS and SCSS.
 import "../stylesheets/application.scss"
+
+// Adds a preview indication as directly uploaded files are being uploaded.
+import "../source/direct_upload.js"

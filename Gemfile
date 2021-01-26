@@ -17,9 +17,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+# Adds the Active Storage variant method to resize uploaded images.
+gem 'image_processing', '~> 1.2'
 
 # Dotenv Rails automatically loads variables from .env files into environment variables accessible from the global variable ENV.
 gem 'dotenv-rails', '~> 2.7'
