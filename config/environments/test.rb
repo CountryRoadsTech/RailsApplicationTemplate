@@ -57,4 +57,11 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
+
+  # Configure bullet to detect N+1 database queries.
+  config.after_initialize do
+    Bullet.enable        = true
+    Bullet.bullet_logger = true
+    Bullet.raise         = true # Raise an error if n+1 query occurs so the test fails.
+  end
 end

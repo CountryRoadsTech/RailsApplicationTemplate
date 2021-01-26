@@ -59,6 +59,9 @@ group :development, :test do
 
   # Faker is used to generate pseudorealistic test data.
   gem 'faker', '~> 2.15'
+
+  # Bullet is used to detect N+1 database queries that should be optimized.
+  gem 'bullet', '~> 6.1'
 end
 
 group :development do
