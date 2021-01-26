@@ -64,6 +64,19 @@ group :development, :test do
   gem 'bullet', '~> 6.1'
   # Brakeman is used to detect potential security vulnerabilities via static analysis.
   gem 'brakeman', '~> 4.10'
+
+  #
+  gem 'rubocop', '~> 1.8', require: false
+  #
+  gem 'rubocop-rails', '~> 2.9', require: false
+  #
+  gem 'rubocop-rspec', '~> 2.1', require: false
+  #
+  gem 'rubocop-performance', '~> 1.9', require: false
+  #
+  gem 'rubocop-i18n', '~> 3.0', require: false
+  #
+  gem 'rubocop-rake', '~> 0.5', require: false
 end
 
 group :development do
