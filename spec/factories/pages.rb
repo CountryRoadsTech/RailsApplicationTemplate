@@ -19,9 +19,12 @@
 #
 #  fk_rails_84a58494eb  (user_id => users.id)
 #
+require 'faker'
+
 FactoryBot.define do
   factory :page do
-    user { nil }
-    title { "MyText" }
+    association :user, factory: :admin_user
+    title { Faker::String(length: 1..1024).unique }
+    body { Faker::Markdown.sandwich }
   end
 end

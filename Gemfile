@@ -56,6 +56,9 @@ group :development, :test do
   gem 'pry-rails', '~> 0.3'
   # Pry Byebug adds debugger commands to the pry console.
   gem 'pry-byebug', '~> 3.9'
+
+  # Faker is used to generate pseudorealistic test data.
+  gem 'faker', '~> 2.15'
 end
 
 group :development do
