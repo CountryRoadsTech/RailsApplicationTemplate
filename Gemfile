@@ -22,6 +22,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Dotenv Rails automatically loads variables from .env files into environment variables accessible from the global variable ENV.
 gem 'dotenv-rails', '~> 2.7'
 
+# Friendly ID allows changing which model attribute is used as the slug in URL permalinks.
+gem 'friendly_id', '~> 5.4'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
