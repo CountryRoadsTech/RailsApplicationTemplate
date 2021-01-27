@@ -15,6 +15,12 @@ AllCops:
     - 'bin/**/*'
     - 'config/**/*'
     - 'db/**/*'
+
+I18n/RailsI18n:
+  Enabled: true
+I18n/GetText:
+  Enabled: false
+
 Style/SymbolArray:
   Enabled: false
 
