@@ -67,17 +67,17 @@ group :development, :test do
   # Brakeman is used to detect potential security vulnerabilities via static analysis.
   gem 'brakeman', '~> 4.10'
 
-  #
+  # Rubocop is a static analysis tool to enforce code styles across developers.
   gem 'rubocop', '~> 1.8', require: false
-  #
+  # Rubocop Rails adds Rails specific checks to Rubocop.
   gem 'rubocop-rails', '~> 2.9', require: false
-  #
+  # Rubocop RSpec adds RSpec specific checks to Rubocop.
   gem 'rubocop-rspec', '~> 2.1', require: false
-  #
+  # Rubocop Performance adds performance specific checks to Rubocop.
   gem 'rubocop-performance', '~> 1.9', require: false
-  #
+  # Rubocop i18n adds i18n specific checks to Rubocop.
   gem 'rubocop-i18n', '~> 3.0', require: false
-  #
+  # Rubocop Rake adds rake specific checks to Rubocop.
   gem 'rubocop-rake', '~> 0.5', require: false
 end
 
