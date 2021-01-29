@@ -21,4 +21,3 @@ import "../source/direct_upload.js"
 // Import Rich Text Editor's Javascript.
 require("trix")
 require("@rails/actiontext")
-
