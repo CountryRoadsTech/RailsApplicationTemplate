@@ -21,3 +21,6 @@ import "../source/direct_upload.js"
 // Import Rich Text Editor's Javascript.
 require("trix")
 require("@rails/actiontext")
+
+// Adds toggle functionality to the navigation bar when the hamburger menu button is pressed.
+import "../source/navigation_bar.js"

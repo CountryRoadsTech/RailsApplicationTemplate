@@ -1,0 +1,11 @@
+.navigation-bar-item {
+  @apply p-2 bg-green-200 hover:bg-green-600 rounded-md border-2 border-blue-400 shadow-lg;
+}
+
+.navigation-bar-button {
+  @apply inline-block navigation-bar-item;
+}
+
+.navigation-bar-block {
+  @apply block navigation-bar-item;
+}

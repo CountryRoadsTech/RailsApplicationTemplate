@@ -1,0 +1,13 @@
+<div class="flow-root p-2 bg-green-500" id="navigation-bar">
+  <div class="navigation-bar-button" id="navigation-bar-home-button">
+    <%= link_to 'Home', root_path %>
+  </div>
+
+  <div class="hidden flow-root" id="navigation-bar-content">
+    <%== navigation_bar_links %>
+  </div>
+
+  <div class="navigation-bar-button float-right" id="navigation-bar-toggle-button">
+    <%= icon 'list' %>
+  </div>
+</div>
